@@ -11,7 +11,7 @@
   
   
   
-  <input type="button" name="eid" value="enggter" onclick="hi();" />
+  <input type="button" name="eid" value="enter" onclick="hi();" />
   <div id="fooBar"> </div>
   <br>
   Date and Time of the meeting<br>
@@ -26,12 +26,15 @@
 	  var s=document.getElementById("size").value;
 	  if(s)
 	{	  
-	  for(var i=0;i<s;i++)
+	  for(var i=1;i<=s;i++)
 	  { 	
 		 
+		document.getElementById("fooBar").innerHTML += i ;
 		var newName1 = document.createElement("INPUT");
-		
+		newName1.setAttribute("name", "email")
 		document.getElementById("fooBar").appendChild(newName1);
+		document.getElementById("fooBar").innerHTML+="<br>";
+		
 		 
 	}
 	 
