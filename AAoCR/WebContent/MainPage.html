@@ -1,73 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript"> 
-function add()
-{
-	var size=document.getElementById("size").value;
-	if(size)
-	{
-	for(var i=0;i<size;i++)
-		{
-		 <!-- var element = document.createElement("input");
 
-		 
-
-		//Assign different attributes to the element.
-		element.setAttribute("type", "text");
-		element.setAttribute("value", "email id");
-		element.setAttribute("name", "");
-		var foo = document.getElementById("fooBar");
-
-		//Append the element in page (in span).
-document.write('<input type="text" name="one+count">'); 
-		foo.appendChild(element); 
-		
-		var emailId = document.getElementbyId("size");
-		var newName1 = document.createElement("eid");
-
-		   newName1.innerHTML = "<input type='text'  name='email' id='email' value='email id'>";
-		   emailId.appendChild(newName1); -->
-		   
-		   
-		   
-		   var newTR1 = document.getElementById("size");
-
-		   var newName1 = document.createElement("TH");
-
-		   newName1.innerHTML = "<input type='text'  name='site' id='site' value='cell value'>";
-		   
-		   newTR1.appendChild(newName1);
-		   
-		   document.form1.reset();
-		   
-		   
-		   
-		   
-		}
-		
-	} 
-}
-function hi()
-{
-	window.prompt("hi");
-	}
-</script>
 </head>
 <body>
- <form action="/action_page.jsp" method="POST" name="form1">
+<!-- <form action="/action_page.jsp" method="POST" name="form1"> -->
   Size of the meeting<br>
   
   <input type="text" name="size" id="size"><br>
   
   
+  
+  <input type="button" name="eid" value="enggter" onclick="hi();" />
   <div id="fooBar"> </div>
-  <input type="button" name="eid" value="enter" onclick="hi();" />
   <br>
   Date and Time of the meeting<br>
   <input type="datetime-local" name="bdaytime"><br><br>
   
   <input type="submit" value="Submit" >
-</form> 
+  
+  <script type="text/javascript">
+  
+  function hi()
+  {   
+	  var s=document.getElementById("size").value;
+	  if(s)
+	{	  
+	  for(var i=0;i<s;i++)
+	  { 	
+		 
+		var newName1 = document.createElement("INPUT");
+		
+		document.getElementById("fooBar").appendChild(newName1);
+		 
+	}
+	 
+  } 
+  }
+  </script>
+ 
 </body>
 </html>
