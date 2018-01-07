@@ -4,7 +4,7 @@
 
 </head>
 <body>
-<!-- <form action="/action_page.jsp" method="POST" name="form1"> -->
+<form action="action_page.jsp" method="POST" name="form1">
   Size of the meeting<br>
   
   <input type="text" name="size" id="size"><br>
@@ -18,7 +18,7 @@
   <input type="datetime-local" name="bdaytime"><br><br>
   
   <input type="submit" value="Submit" >
-  
+  </form>
   <script type="text/javascript">
   
   function hi()
@@ -26,16 +26,15 @@
 	  var s=document.getElementById("size").value;
 	  if(s)
 	{	  
-	  for(var i=1;i<=s;i++)
+	  for(var i=0;i<s;i++)
 	  { 	
 		 
-		document.getElementById("fooBar").innerHTML += i ;
+		document.getElementById("fooBar").innerHTML += i+1 ;
 		var newName1 = document.createElement("INPUT");
-		newName1.setAttribute("name", "email")
+		newName1.name="email"+i;
 		document.getElementById("fooBar").appendChild(newName1);
+		document.getElementById("fooBar").innerHTML+=newName1.name;
 		document.getElementById("fooBar").innerHTML+="<br>";
-		
-		 
 	}
 	 
   } 
